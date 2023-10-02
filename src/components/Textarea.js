@@ -175,6 +175,7 @@ export default function Textarea() {
               type="button"
               className="btn btn-primary mx-1"
               onClick={upperCaseText}
+              disabled={userText.length === 0}
             >
               Uppercase
             </button>
@@ -183,6 +184,7 @@ export default function Textarea() {
               type="button"
               className="btn btn-primary mx-1"
               onClick={lowerCaseText}
+              disabled={userText.length === 0}
             >
               Lowercase
             </button>
@@ -191,6 +193,7 @@ export default function Textarea() {
               type="button"
               className="btn btn-primary mx-1"
               onClick={trimmer}
+              disabled={userText.length === 0}
             >
               Trim extra spaces
             </button>
@@ -199,6 +202,7 @@ export default function Textarea() {
               type="button"
               className="btn  btn-primary mx-1"
               onClick={copy}
+              disabled={userText.length === 0}
             >
               Copy
             </button>
